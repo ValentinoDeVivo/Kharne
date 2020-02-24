@@ -1,0 +1,79 @@
+.btn {
+
+  &,
+  &:link,
+  &:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 3rem 0 3rem;
+  border-radius: 10rem;
+  transition: all .2s; 
+
+  border: none;
+  cursor: pointer;
+  }
+
+  &:hover
+  {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); 
+  }
+
+  &:active,
+  &:focus  {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); 
+  }
+
+  &--gray {
+  letter-spacing: 0.3rem;
+  z-index: 1;
+  animation-name: moveInButton;
+  animation-duration: 5s; 
+  }
+
+  &--white {
+  position: absolute;
+  top: 9rem;
+  left: -8rem;
+  background-color: #fff;
+  color: $color-dark-gray;
+  letter-spacing: 0.3rem;
+  z-index: 1;
+  animation-name: moveInButton;
+  animation-duration: 5s; 
+  }
+
+  &::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  z-index: -1; 
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+  font-size: $default-font-size;
+  color: $color-dark-gray;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid purple;
+  padding: 3px;
+  transition: all .2s;
+  }
+
+  &:hover {
+  background-color: purple;
+  color: $color-black;
+  transform: translateY(-2px);
+  }
+
+  &:active {
+  box-shadow: 0 .5rem 1rem rgba($color-white, .15);
+  transform: translateY(0);
+  }
+}
+

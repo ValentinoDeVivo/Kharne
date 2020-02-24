@@ -1,0 +1,39 @@
+@keyframes moveMain {
+  0% {
+    opacity: 0;
+    letter-spacing: 14rem; 
+  }
+  
+  100% {
+    opacity: 1;
+    letter-spacing: 3.8rem; 
+  } 
+}
+
+@keyframes moveSub {
+  0% {
+    opacity: 0;
+    letter-spacing: 0rem; 
+  }
+  
+  100% {
+    opacity: 1;
+    letter-spacing: 1.1rem; 
+  } 
+}
+
+@keyframes moveInButton {
+  0% {
+    opacity: 0; 
+  }
+
+  100% {
+    opacity: 1;
+  } 
+}
+
+
+
+
+
+
